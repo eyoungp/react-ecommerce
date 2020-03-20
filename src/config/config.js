@@ -1,4 +1,4 @@
-const API_SERVER = 'http://13.125.79.26:5000'
+const API_SERVER = 'httpd://13.125.79.26:5000'
 
 const CONFIG = {
   EVENT_REGISTER: `https://3owli2gq80.execute-api.ap-northeast-2.amazonaws.com/default/event_handler`,
