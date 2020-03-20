@@ -33,7 +33,7 @@ class Event extends React.Component {
       }
 
      // await events.register(name, email, mobile);
-        this.props.onAdd(input);
+      this.props.onAdd(input);
 
       this.setState({
         name: '',

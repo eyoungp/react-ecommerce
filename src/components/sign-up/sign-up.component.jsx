@@ -35,41 +35,24 @@ class SignUp extends React.Component {
       return;
     }
 
-    // if(showVerification == false) {
-    //
-    //   const currentUser = await Auth.signUp({
-    //     username: email,
-    //     password: password
-    //   });
-    //
-    //   this.setState({
-    //     displayName: displayName,
-    //     email: email,
-    //     password: password,
-    //     confirmPassword: confirmPassword,
-    //     verificationCode: verificationCode,
-    //     showVerification: true
-    //   });
-    //   return;
-    // }
+     if(showVerification == false) {
     
-if(showVerification == false) {
-
-  const currentUser = await Auth.signUp({
-    username: email,
-    password: password
-  });
-
-  this.setState({
-    displayName: displayName,
-    email: email,
-    password: password,
-    confirmPassword: confirmPassword,
-    verificationCode: verificationCode,
-    showVerification: true
-  });
-  return;
-}
+       const currentUser = await Auth.signUp({
+         username: email,
+         password: password
+       });
+    
+       this.setState({
+         displayName: displayName,
+         email: email,
+         password: password,
+         confirmPassword: confirmPassword,
+         verificationCode: verificationCode,
+         showVerification: true
+       });
+       return;
+     }
+    
 
     try {
 
